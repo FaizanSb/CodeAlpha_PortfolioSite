@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+.home .homeContent {
+    margin-top: 50px;
+} 
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span{
+    color: orangered;
+}
+
+.navBar{
+    display: flex;
+    gap: 20px; /* Adjust this value as needed */
+}
+
+.navBar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navBar a:hover,
+.navBar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.Contact{
+
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.Contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+#about .about-content #blck{
+    padding: 15px 28px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;   
+}
+#about .about-content #blck:hover{
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.homeContent{
+    max-width: 50%;
+    flex: 1;
+}
+
+.homeContent h3{
+    font-size: 42px;
+}
+
+.homeContent h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.homeContent p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.img-box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px; /* Optional: Adds rounded corners to the image */
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;   
+}
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+::-webkit-scrollbar{
+    width: 16px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background-color: black;
+}
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px orangered 0 0 50px orangered;
+    border-radius: 30px;
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: white;
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em;
+}
+
+/* Education Section */
+.education {
+    padding: 50px 12%;
+    background-color: white;
+    color: black;
+}
+.education h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: black;
+}
+.edu-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.edu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px orangered; /* Orange glow shadow */
+}
+.edu-item h3 {
+    font-size: 24px;
+    color: black;
+}
+.edu-item p {
+    font-size: 20px;
+    color: black;
+}
+.edu-item span {
+    font-size: 20px;
+    color: orangered;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 12%;
+    background-color: black;
+    color: white;
+}
+.projects h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px orangered; /* Orange glow shadow */
+}
+.project-item h3 {
+    font-size: 24px;
+    color: white;
+}
+.project-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: orangered;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.project-link:hover {
+    background-color: darkorange;
+}
+
+
+/* Contact Section */
+
+.contactForm h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contactForm form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contactForm form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contactForm form .input-box input,.contactForm form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+/* Footer Section */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered,0 0 10px orangered;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a:hover{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li align-self:hover{
+    border-bottom: 3px solid orangered;
+
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
